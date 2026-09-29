@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-09-27T23:40:54+03:00",
+  "set_ok": true,
+  "verified_count": 40,
+  "commands": [
+    {
+      "command": "start",
+      "description": "بدء البوت والقائمة الرئيسية"
+    },
+    {
+      "command": "commands",
+      "description": "قائمة كل الأوامر"
+    },
+    {
+      "command": "surah",
+      "description": "نص سورة + استماع (مثال: 18)"
+    },
+    {
+      "command": "ayah",
+      "description": "آية: نص + صوت + تفسير (مثال: 2:255)"
+    },
+    {
+      "command": "tafsir",
+      "description": "التفسير الميسر (مثال: 2:255)"
+    },
+    {
+      "command": "search",
+      "description": "بحث في القرآن (مثال: رحمة)"
+    },
+    {
+      "command": "random",
+      "description": "آية عشوائية"
+    },
+    {
+      "command": "play",
+      "description": "تلاوة سورة (مثال: 36)"
+    },
+    {
+      "command": "reciters",
+      "description": "اختيار القارئ"
+    },
+    {
+      "command": "radios",
+      "description": "الإذاعات المباشرة"
+    },
+    {
+      "command": "prayer",
+      "description": "مواقيت الصلاة"
+    },
+    {
+      "command": "city",
+      "description": "ضبط المدينة (مثال: Alexandria)"
+    },
+    {
+      "command": "adhkar",
+      "description": "الأذكار والأدعية"
+    },
+    {
+      "command": "duas",
+      "description": "الأدعية المأثورة"
+    },
+    {
+      "command": "sajda",
+      "description": "مواضع سجود التلاوة"
+    },
+    {
+      "command": "hadith",
+      "description": "حديث اليوم / تحقّق من حديث"
+    },
+    {
+      "command": "hifz",
+      "description": "خطة الحفظ والحالة"
+    },
+    {
+      "command": "hz",
+      "description": "تسجيل حفظ آية (مثال: 112:1)"
+    },
+    {
+      "command": "tasmia",
+      "description": "تسميع آية (مثال: 112:2)"
+    },
+    {
+      "command": "khatma",
+      "description": "الختمة الجماعية"
+    },
+    {
+      "command": "khnew",
+      "description": "إنشاء ختمة جديدة"
+    },
+    {
+      "command": "khjoin",
+      "description": "الانضمام لختمة"
+    },
+    {
+      "command": "khprogress",
+      "description": "تقدّم الختمة"
+    },
+    {
+      "command": "khdone",
+      "description": "إنهاء جزئي"
+    },
+    {
+      "command": "khmy",
+      "description": "ختماتي"
+    },
+    {
+      "command": "quiz",
+      "description": "مسابقات (تجويد/متشابهات/سيرة)"
+    },
+    {
+      "command": "mood",
+      "description": "آيات حسب حالتك"
+    },
+    {
+      "command": "repeat",
+      "description": "تكرار آية للتدبر"
+    },
+    {
+      "command": "zakat",
+      "description": "حاسبة الزكاة"
+    },
+    {
+      "command": "shuyukh",
+      "description": "فهرس الشيوخ"
+    },
+    {
+      "command": "now",
+      "description": "الإذاعة الحالية"
+    },
+    {
+      "command": "next",
+      "description": "الإذاعة التالية"
+    },
+    {
+      "command": "video",
+      "description": "فيديو الآية (مثال: 112:1)"
+    },
+    {
+      "command": "settings",
+      "description": "الإعدادات"
+    },
+    {
+      "command": "health",
+      "description": "حالة الخدمات"
+    },
+    {
+      "command": "daily",
+      "description": "بثّ آية اليوم للقناة"
+    },
+    {
+      "command": "linkchannel",
+      "description": "ربط القناة"
+    },
+    {
+      "command": "unlinkchannel",
+      "description": "إلغاء ربط القناة"
+    },
+    {
+      "command": "stats",
+      "description": "إحصاءات (للمالك)"
+    },
+    {
+      "command": "help",
+      "description": "المساعدة"
+    }
+  ]
+}

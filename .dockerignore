@@ -1,0 +1,9 @@
+.env
+data/
+logs/
+backups/
+__pycache__/
+*.pyc
+docs/assets/*.png
+tests/_*.txt
+*.session

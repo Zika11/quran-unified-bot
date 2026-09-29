@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-09-28T21:10:46+03:00",
+  "components": {
+    "guard_py": "deploy/guard.py (interval 45s, auto-start on Windows startup)",
+    "windows_startup_entry": "C:\\Users\\af191\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\QuranBotGuard.cmd",
+    "app_cron_job": {
+      "name": "QuranBotGuard",
+      "id": "f4bc70ba-c3c2-416b-9a9c-12265865302f",
+      "expr": "*/30 * * * * @ Africa/Cairo",
+      "lastRunStatus": "ok"
+    }
+  },
+  "live_processes": {
+    "bot": [
+      9236
+    ],
+    "guard": [
+      10080
+    ]
+  },
+  "guard_log_tail": [
+    "2026-09-28T17:42:42+03:00 CRON QuranBotGuard status=شغّال pid=19432 prev=2026-09-28T17:06:36 شغّال pid=19432",
+    "2026-09-28T18:03:17+03:00 CRON QuranBotGuard status=شغّال pid=19432 prev=2026-09-28T17:42:42 شغّال pid=19432",
+    "2026-09-28T20:58:31+03:00 guard started — interval=45s",
+    "2026-09-28T20:58:33+03:00 bot DOWN — restarting",
+    "2026-09-28T20:58:33+03:00 STARTED pid=12420",
+    "2026-09-28 21:03:04 | شغّال | PID=12420",
+    "2026-09-28T21:08:59+03:00 bot DOWN — restarting",
+    "2026-09-28T21:08:59+03:00 STARTED pid=9236"
+  ],
+  "forced_kill_tests": [
+    {
+      "round": 1,
+      "killed_pid": 3848,
+      "restarted_pid": 16580,
+      "detect_seconds": 46,
+      "verified_reply": true
+    },
+    {
+      "round": 2,
+      "killed_pid": 12420,
+      "restarted_pid": 9236,
+      "detect_seconds": 21,
+      "verified_reply": true
+    }
+  ],
+  "production_incident": {
+    "at": "2026-09-28T20:58:33+03:00",
+    "note": "البوت توقف فعليًا (بعد إعادة تشغيل الجهاز) وأعاده الحارس تلقائيًا إلى PID=12420 دون أي تدخل"
+  },
+  "post_restart_interaction": {
+    "replied": true,
+    "seconds": 1.4,
+    "text": "🕌 **بوت القرآن الموحّد**\n\nكل بوتات القرآن في بوت واحد: تلاوات، تفسير، بحث، مواقيت، أذكار، حديث، حفظ، ختمة، مسابقات، وفيد"
+  },
+  "conclusion": "auto-recovery verified: guard restarts the bot within <=46s, windows-startup keeps the guard alive after reboots, and an app cron job double-checks every 30 min; post-restart Telegram replies confirmed."
+}

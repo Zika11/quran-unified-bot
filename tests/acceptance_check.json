@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-28T00:02:02+03:00",
+  "criteria_total": 12,
+  "criteria_done": 12,
+  "selftest": "49/49",
+  "failure_paths": "20/20",
+  "e2e_telegram": "43/43",
+  "bot_pid": 3848,
+  "bot_username": "iQuranOfficial_Bot",
+  "api_ok": true,
+  "checks": [
+    {
+      "id": "bot-inventory-completeness",
+      "label": "كل البوتات مُحصاة وموثّقة",
+      "status": "done",
+      "evidence": [
+        "docs/BOT_INVENTORY.md",
+        "docs/FEATURE_COVERAGE.md"
+      ]
+    },
+    {
+      "id": "unified-command-set",
+      "label": "أوامر موحّدة في بوت واحد",
+      "status": "done",
+      "evidence": [
+        "docs/COMMANDS.md",
+        "tests/selftest_report.json (49/49)"
+      ]
+    },
+    {
+      "id": "no-feature-regression",
+      "label": "لا فقدان لأي وظيفة أصلية",
+      "status": "done",
+      "evidence": [
+        "docs/FEATURE_COVERAGE.md",
+        "selftest handlers/feature tests"
+      ]
+    },
+    {
+      "id": "error-audit-and-fixes",
+      "label": "مراجعة الأخطاء وتصحيحها",
+      "status": "done",
+      "evidence": [
+        "docs/ERROR_REVIEW.md (13 خطأ + إصلاحات)"
+      ]
+    },
+    {
+      "id": "content-integrity",
+      "label": "سلامة النص القرآني",
+      "status": "done",
+      "evidence": [
+        "selftest: 'سلامة النص القرآني (مطابقة المصدر)' صحيح"
+      ]
+    },
+    {
+      "id": "centralized-tracking-store",
+      "label": "تخزين موحّد",
+      "status": "done",
+      "evidence": [
+        "app/db.py",
+        "data/quran_unified.db"
+      ]
+    },
+    {
+      "id": "traceable-logs",
+      "label": "سجلات قابلة للتتبع",
+      "status": "done",
+      "evidence": [
+        "logs/bot.log",
+        "app/util.py @trace"
+      ]
+    },
+    {
+      "id": "local-run-reproducible",
+      "label": "تشغيل محلي ناجح",
+      "status": "done",
+      "evidence": [
+        "bot.pid=3848",
+        "getMe ok → @iQuranOfficial_Bot",
+        "logs/bot.log"
+      ]
+    },
+    {
+      "id": "local-test-scenarios",
+      "label": "حزمة تجربة جاهزة",
+      "status": "done",
+      "evidence": [
+        "docs/TEST_PACK.md (38 اختبارًا)"
+      ]
+    },
+    {
+      "id": "failure-path-handling",
+      "label": "معالجة المسارات الاستثنائية",
+      "status": "done",
+      "evidence": [
+        "docs/FAILURE_PATHS.md",
+        "tests/failure_paths_report.json (20/20)",
+        "tests/failure_smoke.json (6/6 in ~5s)",
+        "tools/e2e_report.json (43/43 on live bot)",
+        "تشغيل فعلي: network fail / invalid input / spam / no-user update / ffmpeg fallback / bad token"
+      ]
+    },
+    {
+      "id": "config-and-secrets-isolation",
+      "label": "فصل الإعدادات والمفاتيح",
+      "status": "done",
+      "evidence": [
+        ".env.example",
+        ".env (خارج git)",
+        "فحص أسرار آلي = 0"
+      ]
+    },
+    {
+      "id": "backup-and-rollback",
+      "label": "نسخة احتياطية وخطة رجوع",
+      "status": "done",
+      "evidence": [
+        "docs/ROLLBACK.md",
+        "backups/pre-merge-*/manifest.json (SHA256)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# متطلبات بوت القرآن الموحّد (Python 3.11+)
+python-telegram-bot[job-queue]==22.8
+requests>=2.31
+# اختيارية: تحسين رسم العربية في الفيديو
+Pillow>=10
+arabic-reshaper>=3.0
+python-bidi>=0.4

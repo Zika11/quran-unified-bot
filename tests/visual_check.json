@@ -1,0 +1,12 @@
+{
+  "file": "docs/assets/ayah-sample.png",
+  "size": [
+    1080,
+    1080
+  ],
+  "bytes": 19254,
+  "ink_ratio": 0.007,
+  "text_bands": 2,
+  "not_blank": true,
+  "has_multiple_bands": true
+}

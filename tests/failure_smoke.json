@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-09-28T00:05:33+03:00",
+  "kind": "failure-path smoke (operation+check)",
+  "passed": 6,
+  "total": 6,
+  "elapsed_s": 4.6,
+  "checks": [
+    {
+      "check": "network_failure_raises",
+      "ok": true,
+      "note": "انتهت مدة الاتصال in 3.0s"
+    },
+    {
+      "check": "arabic_error_message",
+      "ok": true,
+      "note": "⚠️ تعذّر الاتصال بالخدمة (UnreachableHost) حاليًا. تأكد من ا"
+    },
+    {
+      "check": "invalid_ref_rejected",
+      "ok": true,
+      "note": "الصيغة يجب أن تكون سورة:آية (مثال: 2:255)"
+    },
+    {
+      "check": "no_user_update_no_crash",
+      "ok": true,
+      "note": "تم التجاهل"
+    },
+    {
+      "check": "ffmpeg_fallback_photo_audio",
+      "ok": true,
+      "note": "{'audio', 'photo'}"
+    },
+    {
+      "check": "live_api_getMe",
+      "ok": true,
+      "note": "@iQuranOfficial_Bot"
+    }
+  ]
+}
